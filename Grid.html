@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <style>
+        .cont{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: 120px 120px 120px 120px;
+            border : 4px slategrey
+            font-size: 2rem;
+            font-weight: bold;
+            
+        }
+
+        .header{
+            grid-column: 1/5;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-size: 2rem;
+            font-weight: bold;
+            border-bottom: 2px solid blue;
+            border-top: 2px solid blue;
+            border-right: 2px solid blue;
+            border-left: 2px solid blue;
+            background-color: orangered;
+            border-radius: 7px;
+        }
+        
+        .sidebar{
+            grid-column: 1/2;
+            grid-row: 2/4;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border-right: 2px solid blue;
+            border-left: 2px solid blue;
+            border-bottom: 2px solid blue;
+            background-color: rgb(0, 217, 255);
+            border-radius: 7px;
+        }
+
+        .content{
+            grid-column: 3/5;
+            grid-row: 2/4;
+            padding: 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border-left: 2px solid blue;
+            border-right: 2px solid blue;
+            border-bottom: 2px solid blue;
+            background-color: rgb(237, 53, 181);
+            border-radius: 7px;
+        }
+        
+        .ft{
+            grid-column: 1/5;
+            grid-row: 4/5;
+            padding: 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border-left: 2px solid blue;
+            border-right: 2px solid blue;
+            border-bottom: 2px solid blue;
+            border-top: 2px solid blue;
+            background-color: rgb(0, 255, 0);
+            border-radius: 7px;
+        }
+    </style>
+
+<body>
+    <div class="cont">
+        <div class="header">
+            HEADER
+        </div>
+        <div class="sidebar">
+            SIDEBAR
+        </div>
+        <div class="content">
+            CONTENT
+        </div>
+        <div class="ft">
+            FOOTER
+        </div>
+
+    </div>
+</body>
+</html>
